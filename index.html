@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>CodingQuiz</title>
+</head>
+<body>
+  <header class="quiz-head">
+    <a>View high scores</a><!--anchor to send to high scores page, did not finish need to come back-->
+    <time></time>
+  </header>
+
+  <main>
+<!--first part shown entering the web-browser-->
+    <div class="begin-card" id="my-start-card">
+      <h2>Coding Quiz</h2>
+      <p>Let the quiz begin! It is a timed quiz.<br>
+      For each incorrect answer we will subtract 6 seconds!
+      </p>
+      <button class="start-button" id="start-timer">Start Game</button>
+    </div>
+
+<!--section for questions on the quize-->
+<!--don't need any text let javaS rotation through the divs. need buttons for options-->
+    <div hidden class="game-card" id ="my-game-card">
+      <h2 class="game-question"></h2>
+      <div id="button-choice">
+      </div> 
+      <!--make a div here for results-->
+      <div class="results">
+        <hr>
+        <p id="rtext"></p>
+      </div>
+    </div>
+
+
+
+
+
+
+  <!--make a div here for the score card section after the test-->
+  <!--It needs to show your score and a spot to enter your initials with a submit button-->
+<div hidden id="scored" class="card">
+  <h2 class="game-score"></h2>
+  <p>add your initials</p>
+  <input type="text"/>
+  <button id="initbtn">submit</button>
+</div>
+
+
+
+  <!--div here that shows saved high scores with initials-->
+  <!--add a go back button the refreshed the page-->
+<div hidden id="score-list">
+  <h2 class="high-score-list"></h2>
+  <ul id="passvsfail"></ul>
+  <button class="button" id="return-button">Return</button>
+</div>
+
+
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
